@@ -1,2 +1,1 @@
-# personal-profile
-Personal Profile Website
+# Personal Profile Website
