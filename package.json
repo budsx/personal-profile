@@ -1,0 +1,22 @@
+{
+  "name": "personal-profile",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budsx/personal-profile.git"
+  },
+  "author": "budsx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/budsx/personal-profile/issues"
+  },
+  "homepage": "https://github.com/budsx/personal-profile#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
