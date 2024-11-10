@@ -4,181 +4,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budis Personal Website</title>
+    <title>Budi Setiawan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://hyperui.dev/" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100">
-    <div class="mx-auto">
-        <section
-            class="bg-gray-100 min-h-screen flex flex-col justify-center items-center text-center p-8 border border-gray-300 style="
-            border-bottom-left-radius: 100px; border-bottom-right-radius: 100px;">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
-                Building Digital Products, Brands, & Experiences
-            </h1>
-            <p class="text-lg md:text-2xl text-gray-600 mt-4 max-w-2xl">
-                Collaborating with brands to create impactful, meaningful results.
-            </p>
-            <a href="#" class="mt-8 px-8 py-3 bg-gray-300 text-black rounded-full text-lg">
-                Tell me about your project
-            </a>
-        </section>
+<body>
+    <div
+        class="mx-auto flex flex-col items-center bg-gray-900 text-white min-h-screen border-l border-r border-gray-600 p-4">
+        <div class="w-full max-w-screen-lg p-8 space-y-10">
 
-        <section class="bg-gray-100 min-h-screen flex flex-col items-center text-center py-16 px-8 text-center">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">About Me</h2>
-                <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
-                    I'm a digital product designer focused on creating functional and beautiful experiences. I work with
-                    brands to solve design challenges and create meaningful, impactful results.
-                </p>
+            <nav class="bg-gray-900 flex items-center justify-between p-4 shadow">
+                <div class="flex items-center space-x-2">
+                    <div class="w-4 h-4 bg-yellow-500 rounded-full"></div>
+                    <span class="text-lg font-semibold text-white">BUDI</span>
+                </div>
+
+                <div class="sm:hidden">
+                    <button id="menu-button" class="text-white focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden sm:flex space-x-8">
+                    <a href="#" class="font-semibold hover:text-gray-700">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700">Blogs</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700">Contact</a>
+                </div>
+
+                <div id="mobile-menu"
+                    class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 sm:hidden">
+                    <button id="close-button" class="absolute top-4 right-4 text-gray-600 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <div class="flex flex-col items-start p-8 space-y-4">
+                        <a href="#" class="text-black font-semibold hover:text-gray-700">Home</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700">Blogs</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="flex flex-col items-center text-white py-10 bg-gray-800 rounded-lg p-6">
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-4">
+                    <img src="https://techcloudltd.com/wp-content/uploads/2024/06/male-professional-headshots-1024x638.webp"
+                        alt="Profile Picture" class="w-full h-full object-cover" />
+                </div>
+                <h1 class="text-2xl font-bold">Budi Setiawan</h1>
+                <p class="text-gray-400 mt-1">Backend developer and community builder from NYC 🇺🇸</p>
+                <button class="mt-4 px-6 py-2 bg-gray-200 text-gray-900 rounded-full font-semibold hover:bg-gray-300">
+                    Available For Work
+                </button>
             </div>
-        </section>
 
-        <section class="bg-gray-100 bg-gray-100 min-h-screen flex flex-col items-center text-center py-16 px-8 border ">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 text-center mb-8">Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-                        <img alt=""
-                            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                            class="h-56 w-full object-cover" />
-
-                        <div class="bg-white p-4 sm:p-6">
-                            <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time>
-
-                            <a href="#">
-                                <h3 class="mt-0.5 text-lg text-gray-900">How to position your furniture for positivity
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                                quidem,
-                                mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque
-                                dignissimos. Molestias explicabo corporis voluptatem?
-                            </p>
-                        </div>
-                    </article>
-                    <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-                        <img alt=""
-                            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                            class="h-56 w-full object-cover" />
-
-                        <div class="bg-white p-4 sm:p-6">
-                            <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time>
-
-                            <a href="#">
-                                <h3 class="mt-0.5 text-lg text-gray-900">How to position your furniture for positivity
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                                quidem,
-                                mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque
-                                dignissimos. Molestias explicabo corporis voluptatem?
-                            </p>
-                        </div>
-                    </article>
-                    <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-                        <img alt=""
-                            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                            class="h-56 w-full object-cover" />
-
-                        <div class="bg-white p-4 sm:p-6">
-                            <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time>
-
-                            <a href="#">
-                                <h3 class="mt-0.5 text-lg text-gray-900">How to position your furniture for positivity
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                                quidem,
-                                mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque
-                                dignissimos. Molestias explicabo corporis voluptatem?
-                            </p>
-                        </div>
-                    </article>
+            <div class="flex flex-col bg-gray-900 text-white space-y-6">
+                <h2 class="text-xl font-semibold">Experience</h2>
+                <div
+                    class="flex flex-col sm:flex-row items-start bg-gray-800 rounded-lg p-6 space-y-4 sm:space-y-0 sm:space-x-4">
+                    <div class="rounded-full bg-gray-600 flex items-center justify-center sm:mx-0">
+                        <img src="https://karir-production.nos.jkt-1.neo.id/logos/15/3917015/Bluebird_icon_new.jpg"
+                            alt="Blue Bird Group" class="w-16 rounded-full" />
+                    </div>
+                    <div class="text-left sm:text-left">
+                        <p class="text-sm text-gray-400">2022 - Present</p>
+                        <h3 class="text-lg font-semibold">Backend Developer at Blue Bird Group</h3>
+                        <p class="text-sm text-gray-400">Hybrid</p>
+                        <p class="mt-2 text-gray-300">
+                            Developing scalable backend systems, optimizing server performance, and collaborating with
+                            front-end
+                            teams to deliver robust web applications. Worked with clients like Google, Microsoft, and
+                            LinkedIn.
+                        </p>
+                    </div>
                 </div>
             </div>
-    </div>
-    </section>
 
-    <section class="bg-white py-16 px-8">
-        <div class="max-w-lg mx-auto text-center">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-8">Email Me</h2>
-            <form action="#" method="POST" class="space-y-6">
-                <div>
-                    <input type="text" name="name" placeholder="Your Name"
-                        class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+            <div class="flex flex-col bg-gray-900 text-white space-y-6 max-w-screen-lg mx-auto">
+                <h2 class="text-xl font-semibold">Articles</h2>
+                <div class="flex items-start bg-gray-800 rounded-lg p-4 space-x-4 relative">
+                    <div class="flex-1">
+                        <p class="text-sm text-gray-400">medium.com</p>
+                        <h3 class="text-lg font-semibold mt-1">KumoX Images Now Available On Docker Hub</h3>
+                        <p class="text-gray-300 mt-2">
+                            Today, KumoX announced that it has become a DVP, marking a significant milestone for our
+                            shared mission to enhance the security.
+                        </p>
+                    </div>
+                    <a href="#" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14" />
+                        </svg>
+                    </a>
                 </div>
-                <div>
-                    <input type="email" name="email" placeholder="Your Email"
-                        class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+
+                <div class="flex items-start rounded-lg p-4 space-x-4 relative">
+                    <div class="flex-1">
+                        <p class="text-sm text-gray-400">medium.com</p>
+                        <h3 class="text-lg font-semibold mt-1">Nobody Wants To Work with Josh</h3>
+                        <p class="text-gray-300 mt-2">
+                            There was a wizard engineer (we'll call him “Josh”) who worked for me a few years ago. His
+                            code was good. His PRs were quick.
+                        </p>
+                    </div>
+                    <a href="#" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14" />
+                        </svg>
+                    </a>
                 </div>
-                <div>
-                    <textarea name="message" rows="5" placeholder="Your Message"
-                        class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+
+                <div class="flex items-start bg-gray-800 rounded-lg p-4 space-x-4 relative">
+                    <div class="flex-1">
+                        <p class="text-sm text-gray-400">indiehackers.com</p>
+                        <h3 class="text-lg font-semibold mt-1">A Sharp And Solid Outline Of 3D Grid Magic</h3>
+                        <p class="text-gray-300 mt-2">
+                            Since the world is 3D, it's no surprise that video games, mobile robotics challenges, and
+                            architectural design tools often require 3D variants.
+                        </p>
+                    </div>
+                    <a href="#" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14" />
+                        </svg>
+                    </a>
                 </div>
-                <button type="submit" class="w-full px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Send
-                    Message</button>
-            </form>
-        </div>
-    </section>
+            </div>
 
-    <footer class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
 
-            <div class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
-                <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
-                    <li>
-                        <a href="#" class="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
-                    </li>
+            <div class="flex flex-col bg-gray-900 text-white space-y-6 max-w-screen-lg mx-auto">
+                <h2 class="text-xl font-semibold">Side Hustles</h2>
 
-                    <li>
-                        <a href="#" class="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="text-gray-500 transition hover:opacity-75"> Cookies </a>
-                    </li>
-                </ul>
-
-                <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
-                    <li>
-                        <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
-                            <span class="sr-only">Instagram</span>
-
-                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                                    clip-rule="evenodd" />
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start bg-gray-800 rounded-lg p-4 space-x-4 relative">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                            <img src="https://via.placeholder.com/40/FF5733" alt="Tail Library Logo"
+                                class="w-8 h-8 rounded-full" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold">Tail Library</h3>
+                            <p class="text-gray-400 mt-1">An easy-to-use components library based on Tailwind CSS.</p>
+                        </div>
+                        <a href="#" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14" />
                             </svg>
                         </a>
-                    </li>
+                    </div>
 
-                    <li>
-                        <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
-                            <span class="sr-only">GitHub</span>
-
-                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd" />
+                    <div class="flex items-start bg-gray-800 rounded-lg p-4 space-x-4 relative">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center">
+                            <img src="https://via.placeholder.com/40/28a745" alt="KumoNext Logo"
+                                class="w-8 h-8 rounded-full" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold">KumoNext</h3>
+                            <p class="text-gray-400 mt-1">A free frontend framework based on Tailwind CSS and Next.js.
+                            </p>
+                        </div>
+                        <a href="#" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M5 5h14v14" />
                             </svg>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
+
+            <footer class="flex flex-col items-center bg-gray-900 text-gray-400 py-8 space-y-4">
+                <!-- Social Media Icons -->
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600">
+                        <!-- LinkedIn Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M4.98 3.5c0 .828-.67 1.5-1.5 1.5S2 4.328 2 3.5 2.67 2 3.5 2s1.5.672 1.5 1.5zm.02 4.5H2V22h3V8zm7.5 0h-3v14h3v-7.25c0-3.75 5-4.034 5 0V22h3v-8.5c0-6.417-7-6.208-8-3V8z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600">
+                        <!-- GitHub Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.867 8.167 6.839 9.489.5.09.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.528 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.338-2.22-.252-4.555-1.111-4.555-4.945 0-1.092.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.706.115 2.505.338 1.908-1.294 2.747-1.025 2.747-1.025.546 1.378.202 2.397.1 2.65.64.699 1.027 1.591 1.027 2.683 0 3.843-2.339 4.69-4.566 4.936.359.31.678.923.678 1.86 0 1.343-.012 2.427-.012 2.757 0 .269.18.579.688.48C19.137 20.163 22 16.417 22 12c0-5.523-4.477-10-10-10z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600">
+                        <!-- Instagram Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zm8.75 2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 8.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Footer Text -->
+                <p class="text-sm">&copy; Budi. All rights reserved.</p>
+            </footer>
+
+
+
         </div>
-    </footer>
     </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const closeButton = document.getElementById('close-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+        });
+
+        closeButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+        });
+    </script>
 </body>
 
 </html>
